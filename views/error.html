@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Something Went Wrong</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: linear-gradient(to right, #ff6b6b, #ff4757);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 400px;
+            text-align: center;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            color: #ff4757;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #444;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .emoji {
+            font-size: 60px;
+            margin-bottom: 10px;
+            animation: shake 0.6s infinite alternate;
+        }
+
+        @keyframes shake {
+            from { transform: rotate(-5deg); }
+            to { transform: rotate(5deg); }
+        }
+
+        .btn {
+            background: #ff4757;
+            color: white;
+            padding: 12px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #e84118;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="emoji">🚨</div>
+        <h1>Oops! Something went wrong</h1>
+        <p>We encountered an error while processing your request.</p>
+        <a href="/" class="btn">Go Back Home</a>
+    </div>
+</body>
+</html>
